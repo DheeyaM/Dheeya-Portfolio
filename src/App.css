@@ -450,3 +450,80 @@ html {
     caret-color:#28c840;
 }
 
+
+
+@media (max-width: 768px) {
+
+  /* HERO STACKS VERTICALLY */
+  .hero {
+    height: auto;
+    padding: 100px 20px 60px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /* IMAGE SHRINKS */
+  .image-profile {
+    width: 220px;
+    height: 220px;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+
+  /* TEXT ADJUSTMENTS */
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .nameHeader {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  /* BUTTON + ICON LAYOUT STACK */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  /* TERMINAL FIX */
+  .terminal {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* ABOUT SECTION GRID STACK */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* NAVBAR SMALLER */
+  .navBar {
+    height: 60px;
+  }
+}
