@@ -2,6 +2,7 @@ import { use } from 'react';
 import {useEffect, useState, useRef} from 'react';
 import portfolio from './portfolio.png'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
 
 
 function Hero() {
@@ -36,6 +37,9 @@ function Hero() {
 
   <a href="https://github.com/DheeyaM" target="_blank">
     <FaGithub size={24} />
+  </a>
+  <a href="https://www.threads.com/@dheeyaaa.___" target="_blank">
+    <FaThreads size={22} />
   </a>
 </div>
         </div>
