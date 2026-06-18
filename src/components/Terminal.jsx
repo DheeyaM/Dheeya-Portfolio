@@ -42,8 +42,7 @@ function Terminal() {
 
     hobbies: [
       "🎮 Gaming",
-      "🧶 Crocheting",
-      "📈 Trading"
+      "🧶 Crocheting"
     ],
 
     contact: [
