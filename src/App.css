@@ -6,7 +6,9 @@
   align-items: center;
 }
 
-/* MAIN LAYOUT */
+html {
+  scroll-behavior: smooth;
+}
 .hero-container {
   display: flex;
   align-items: center;
@@ -193,3 +195,258 @@
 
   backdrop-filter: blur(6px);
 }
+
+.about {
+  background: #0d1b2a;
+  color: #e8e0f0;
+  font-family: 'Inter', sans-serif;
+  padding: 80px 8%;
+  box-sizing: border-box; /* padding doesn't cause overflow */
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C9A84C;          /* gold */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.section-label::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: #C9A84C;
+  display: inline-block;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 52px); /* scales with screen width */
+  font-weight: 700;
+  color: #e8e0f0;
+  margin: 0 0 48px;
+  line-height: 1.1;
+}
+
+.section-title .accent {
+  color: #C9A84C;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 60px;
+  align-items: start; /* columns start at the top, not stretched to match height */
+}
+
+/* ── BIO PARAGRAPHS ──────────────────────────────────────────────────────────*/
+.bio {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #b0a8c0;   /* muted lavender-grey */
+  margin: 0 0 20px;
+}
+
+/* Bold words inside bio get a lighter colour so they stand out */
+.bio strong {
+  color: #e8e0f0;
+  font-weight: 500;
+}
+
+/* ── DIVIDER LINE ─────────────────────────────────────────────────────────── */
+.divider {
+  width: 40px;
+  height: 2px;
+  background: #C9A84C;
+  margin: 8px 0 28px;
+  border-radius: 2px;
+}
+
+/* ── "A FEW THINGS ABOUT ME" LABEL ──────────────────────────────────────────*/
+.fun-title {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin: 0 0 16px;
+}
+
+/* ── FUN FACTS CONTAINER ─────────────────────────────────────────────────────
+   Stacks each fact card vertically */
+.fun-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── SINGLE FACT CARD ────────────────────────────────────────────────────────*/
+.fact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(201, 168, 76, 0.05);   /* very faint gold tint */
+  border: 1px solid rgba(201, 168, 76, 0.12);
+  border-radius: 12px;
+  padding: 12px 16px;
+  transition: border-color 0.2s; /* smooth hover effect */
+}
+
+.fact-item:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+}
+
+/* The Tabler icon inside each fact card */
+.fact-icon {
+  font-size: 20px;
+  color: #C9A84C;
+  flex-shrink: 0; /* stops the icon from squishing when text is long */
+}
+
+/* Text block next to the icon */
+.fact-text {
+  font-size: 13px;
+  color: #b0a8c0;
+  line-height: 1.6;
+}
+
+/* Bold title inside each fact — sits on its own line */
+.fact-text strong {
+  color: #e8e0f0;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* ── SKILLS BLOCK ────────────────────────────────────────────────────────────
+   Each skills-block is one category (Languages, Currently learning, etc.) */
+.skills-block {
+  margin-bottom: 24px;
+}
+
+/* Category label above the tags */
+.skills-cat {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7a6e9a;    /* muted purple */
+  margin: 0 0 12px;
+}
+
+/* Tag container — wraps onto the next line when there's no room */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Individual skill tag pill */
+.tag {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c0b8d4;
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.tag:hover {
+  border-color: rgba(201, 168, 76, 0.3);
+  color: #C9A84C;
+}
+
+
+.terminal {
+    width: 500px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(18,25,38,.9);
+    backdrop-filter: blur(20px);
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.4);
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.terminal-header{
+    background-color: #182133;
+    height: 45px;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:15px;
+    gap:8px;
+}
+
+.dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.red{
+    background:#ff5f57;
+}
+
+.yellow{
+    background:#ffbd2e;
+}
+
+.green{
+    background:#28c840;
+}
+
+.terminal-body{
+    padding:20px;
+
+    color:white;
+
+    font-family: monospace;
+
+    overflow-y:auto;
+      scroll-padding-top: 10px;
+    height:100%;
+}
+
+.terminal-body p{
+    margin:6px 0;
+    color:#d8d8d8;
+}
+
+.prompt{
+    color:#28c840;
+    margin-right:10px;
+}
+
+.terminal-input-row{
+    display:flex;
+    align-items:center;
+}
+
+.terminal input{
+    background:none;
+    border:none;
+    outline:none;
+
+    color:white;
+
+    font-family: monospace;
+
+    width:100%;
+}
+
+.terminal input{
+    caret-color:#28c840;
+}
+

@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id = "hero">
       
       <div className="hero-container">
 
@@ -30,11 +30,11 @@ function Hero() {
             <a href="mailto:dheeyam7@gmail.com" className="contact-btn">
   Contact Me  <span className="arrow">→</span>
 </a>
-  <a href="https://linkedin.com" target="_blank">
+  <a href="https://www.linkedin.com/in/dheeya-manilal/" target="_blank">
     <FaLinkedin size={24} />
   </a>
 
-  <a href="https://github.com" target="_blank">
+  <a href="https://github.com/DheeyaM" target="_blank">
     <FaGithub size={24} />
   </a>
 </div>
