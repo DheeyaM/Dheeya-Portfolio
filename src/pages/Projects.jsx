@@ -1,5 +1,11 @@
 import { useRef } from "react";
 import ProjectCard from "../components/ProjectCard";
+import RecipeWebsite from "./images/RecipeWebsite.png";
+import todoApp from "./images/ToDo1.png";
+import expenseTracker1 from "./images/ExpenseTracker1.png";
+import expenseTracker2 from "./images/ExpenseTracker2.png";
+import inventorytracker from "./images/InventoryTracker.png";
+import toDo2 from "./images/ToDo2.png";
 
 function Projects() {
     const galleryRef = useRef(null);
@@ -38,71 +44,56 @@ function Projects() {
             <div className="project-gallery" ref={galleryRef}>
 
                 <ProjectCard
-                    image="https://via.placeholder.com/400x200"
+                    image={RecipeWebsite}
                     title="Recipe Website"
                     description="My first HTML + CSS project."
                     tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
+                    github="https://github.com/DheeyaM/recipe-website"
+                    demo="https://dheeyam.github.io/recipe-website/"
                 />
                 <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
+                    image={todoApp}
+                    title="Task Manager I"
+                    description="My first HTML + CSS + JavaScript project."
+                    tech={["HTML", "CSS", "Javascript"]}
+                    github="https://github.com/DheeyaM/To-Do-List"
+                    demo="https://dheeyam.github.io/To-Do-List/"
                 />
                 <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
+                    image={expenseTracker1}
+                    title="Expense Tracker I"
+                    description="A simple expense tracker app built with HTML, CSS, and JavaScript."
+                    tech={["HTML", "CSS", "Javascript"]}
+                    github="https://github.com/DheeyaM/ExpenseTracker"
+                    demo="https://dheeyam.github.io/ExpenseTracker/"
                 />
                 <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
+                    image={expenseTracker2}
+                    title="Expense Tracker II"
+                    description="An expense tracker app with charts"
+                    tech={["HTML", "CSS", "Javascript", "chart.js"]}
+                    github="https://github.com/DheeyaM/Smart-Expense-Tracker"
+                    demo="https://dheeyam.github.io/Smart-Expense-Tracker/"
                 />
                 <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
+                    image={inventorytracker}
+                    title="Inventory Tracker"
+                    description="A crochet inventory tracker for my business."
+                    tech={["HTML", "CSS", "Javascript"]}
+                    github="https://github.com/DheeyaM/Inventory-Tracker"
+                    demo="https://dheeyam.github.io/InventoryTracker/"
                 />
                 <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
+                    image={toDo2}
+                    title="Task Manager II"
+                    description="My first React project"
+                    tech={["Javascript", "React"]}
+                    github="https://github.com/DheeyaM/TaskManager"
+                    // demo="example.com"
                 />
-                <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
-                />
-                <ProjectCard
-                    image="https://via.placeholder.com/400x200"
-                    title="Recipe Website"
-                    description="My first HTML + CSS project."
-                    tech={["HTML", "CSS"]}
-                    github="https://github.com"
-                    demo="https://example.com"
-                />
+               
 
-                {/* add more cards here */}
+
 
             </div>
 

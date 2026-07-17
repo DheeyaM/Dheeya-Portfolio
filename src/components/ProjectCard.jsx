@@ -25,8 +25,8 @@ function ProjectCard({ image, title, description, tech, github, demo }) {
                 </div>
 
                 <div className="project-links">
-                    <a href={demo}>Live Demo</a>
-                    <a href={github}>GitHub</a>
+                    <a href={demo} target='_blank'>Live Demo</a>
+                    <a href={github} target='_blank'>GitHub</a>
                 </div>
 
             </div>
